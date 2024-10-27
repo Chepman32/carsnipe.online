@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: BurgerKing;
+  src: url(./assets/fonts/Insanibc.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: BebasNeue-Regular;
+  src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: Futura Extra Black Condensed Italic;
+  src: url(./assets/fonts/Futura\ Extra\ Black\ Condensed\ Italic.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none !important;
+}
+body {
+  margin: 0;
+  font-family: BebasNeue-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(./assets/images/a9bdf515-102c-4bf3-abb4-afca1e533796.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.auctionHub__cardText {
+  font-size: 6vh;
+  font-family: BebasNeue-Regular;
+  color: #fff;
+  font-weight: 400;
+}
+
+.auctionHub__cardText_black {
+  font-size: 6vh;
+  font-family: BebasNeue-Regular;
+  color: #fff;
+  font-weight: 400;
+  color: #000;
+}
+
+.auctionDetails .time {
+  font-family: BebasNeue-Regular;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #f8eb01;
+}
+
+.thinText {
+  font-size: 2.5vh;
+  font-family: BebasNeue-Regular;
+  color: #fff;
+  font-weight: 100;
+  color: #000;
 }

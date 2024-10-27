@@ -1,0 +1,153 @@
+.mainPage {
+  display: flex;
+  padding: .5rem;
+  background: url(../../assets/images/soft-background.png);
+  height: 100vh;
+}
+
+.mainPage a {
+  text-decoration: none;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tile {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.column:first-child .tile:first-child,
+.column:first-child .tile:last-child,
+.column:last-child .tile:first-child,
+.column:last-child .tile:last-child {
+  width: 24.3vw;
+}
+
+.column:first-child .tile:first-child {
+  background: rgba(0, 255, 0, 0.5);
+  height: 50%;
+}
+
+.column:first-child .tile:last-child {
+  background: yellow;
+  height: 50%;
+}
+
+.column:nth-child(2) .tile {
+  background: url(../../assets/images/auctionsHub.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 100%;
+  color: white;
+}
+
+.column:last-child .tile:first-child {
+  background: rgb(192, 108, 55);
+  height: 50%;
+}
+
+.column:last-child .tile:last-child {
+  background: silver;
+  height: 50%;
+}
+
+.focused {
+  border: 3px solid rgb(180, 50, 50);
+}
+
+.mainActionsModal__row {
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+  background: #528a4c;
+  font-size: 2vh;
+  font-weight: 600;
+}
+
+.mainHub__card:hover {
+  border: 2px solid red;
+}
+
+.mainpage__cardText_black {
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 5vh;
+  font-weight: 600;
+  color: #333;
+  padding: .3vh 1.5vh;
+  border-radius: .7vh;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.activeCard {
+  border: .2rem solid red;
+  border-radius: 15px;
+}
+
+@media (max-width: 512px) {
+  .mainPage {
+    flex-direction: column; /* Stack columns vertically on very small screens */
+  }
+
+  .column {
+    width: 100%; /* Full width for columns on very small screens */
+  }
+
+  .tile {
+    font-size: 1.2rem; /* Smaller font size for tiles */
+  }
+}
+
+@media (max-width: 768px) {
+  .mainPage {
+    padding: 10px; /* Reduced padding for smaller screens */
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+
+  .column:first-child .tile:first-child,
+  .column:first-child .tile:last-child,
+  .column:last-child .tile:first-child,
+  .column:last-child .tile:last-child {
+    width: 100%; /* Full width for tiles on smaller screens */
+    height: 80vw;
+  }
+
+  .column:nth-child(2) .tile {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .mainActionsModal__row {
+    font-size: 1.5vh; /* Smaller font size for actions modal */
+  }
+
+  .mainpage__cardText_black {
+    font-size: 4vh; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .mainPage {
+    padding: 15px; /* Adjust padding for medium screens */
+  }
+
+  .tile {
+    font-size: 1.5rem; /* Adjust font size for medium screens */
+  }
+}

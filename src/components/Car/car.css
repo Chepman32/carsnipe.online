@@ -1,0 +1,72 @@
+/* Default styles for car */
+.car {
+    position: absolute;
+    bottom: 20vh;
+    width: 50vh;
+    height: 40vh;
+    background-image: url('../../assets/icons/car.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .rareWheel, .frontWheel {
+    position: absolute;
+    top: 20vh;
+  }
+  
+  .rareWheel {
+    left: 4vw;
+  }
+  
+  .frontWheel {
+    right: 5vw;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .car {
+      width: 80%;
+    }
+    .car-wheel {
+      width: 7vw;
+      height: 7vw;
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .car {
+      width: 60%;
+    }
+    .car-wheel {
+      width: 8vw;
+      height: 8vw;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 1025px) {
+    .car {
+      width: 50%;
+    }
+    .car-wheel {
+      width: 10vw;
+      height: 10vw;
+    }
+  }
+  
+  .car-wheel {
+    background-image: url('https://i.pinimg.com/originals/f4/8f/ea/f48fea746a31d600627605dcfe902b58.png');
+    background-size: cover;
+    animation-duration: 5s;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.auctionActionsModal__row {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    background: #528a4c;
+    font-size: 2vh;
+    font-weight: 600;
+  }
+
+  .auctionActionsModal__row_selected {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    background: #528a4c;
+    font-size: 2vh;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #fff;
+  }

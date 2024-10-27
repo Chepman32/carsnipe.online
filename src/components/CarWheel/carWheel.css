@@ -1,0 +1,17 @@
+.car-wheel {
+    width: 35vw;
+    height: 35vw;
+    background-image: url('https://i.pinimg.com/originals/f4/8f/ea/f48fea746a31d600627605dcfe902b58.png');
+    background-size: cover;
+    animation-duration: 5s;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
